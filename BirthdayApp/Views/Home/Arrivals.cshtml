@@ -1,0 +1,16 @@
+﻿@model IEnumerable<BirthdayApp.Models.InvitationModel>
+
+@if(Model.Count() == 1)
+{
+    <p>You are the first Arrival</p>
+}
+else
+{
+    <hr />
+    <p>
+        @foreach(var item in Model)
+        {
+            <label class="label label-success">@item.Name</label>
+        }
+    </p>
+}

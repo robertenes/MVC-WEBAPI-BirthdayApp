@@ -1,0 +1,17 @@
+﻿@model BirthdayApp.Models.InvitationModel
+@{
+    ViewBag.Title = "Thank Youuu!!!";
+}
+
+<h1>Thank You Very Much, @Model.Name</h1>
+@if(Model.JoinState == true)
+{
+    @:I am very happy because of you are come in. All prepare almost ready..!
+    @Html.Action("Arrivals","Home")
+}
+else
+{
+    @:I am very sad because of you aren't come in:( Thank you for reporting.
+}
+
+
